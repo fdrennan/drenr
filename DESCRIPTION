@@ -13,7 +13,6 @@ Depends:
     shiny,
     shinycssloaders,
     shinydashboard,
-    bslib,
     styler,
     dplyr,
     fs,

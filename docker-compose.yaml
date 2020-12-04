@@ -1,0 +1,23 @@
+version: "3.0"
+
+services:
+  shiny:
+    container_name: shiny
+    # To build the image locally, comment out "image" below, and uncomment
+    # "build" and the lines indented under it.
+    build:
+     context: .
+     dockerfile: Dockerfile
+    restart: always
+
+    user: 'root'
+
+    ports:
+      - '4000:3838'
+    volumes:
+      - './logs:/var/log/shiny-server'
+      - '.:/srv/shiny-server/'
+
+
+# volumes:
+  # shiny_logs:
