@@ -11,6 +11,17 @@ Encoding: UTF-8
 LazyData: true
 Depends:
     shiny,
-    shinycssloaders
+    shinycssloaders,
+    shinydashboard,
+    bslib,
+    styler,
+    dplyr,
+    fs,
+    snakecase,
+    knitr,
+    stringr,
+    cli,
+    shinymaterial,
+    scales
 Suggests: 
     testthat
